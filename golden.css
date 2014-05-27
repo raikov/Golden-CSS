@@ -1,0 +1,57 @@
+ /*****************************************
+
+         Golden Ratio Framework v0.01b
+
+ *****************************************/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-size: 100%;
+  line-height:161.803398875%;
+  font-family: Arial;
+}
+
+.golden-wrapper{
+  display: table;
+  position: relative;
+  table-layout: fixed;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.golden-wrapper > .content, .golden-wrapper > .sidebar{ display: table-cell; vertical-align: top;}
+.golden-wrapper > .content{ width: 61.80339887498547%; }
+.golden-wrapper > .sidebar{ width: 38.19660112501453%; }
+
+.container{
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: calc(100% / 1.61803398875 / 1.61803398875 / 1.61803398875 / 1.61803398875 / 1.61803398875 / 1.61803398875);
+  padding: -webkit-calc(100% / 1.61803398875 / 1.61803398875 / 1.61803398875 / 1.61803398875 / 1.61803398875 / 1.61803398875);
+}
+.container:after{
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+p{
+  text-align: justify;
+  padding-bottom: calc(100% / 1.61803398875 / 1.61803398875 / 1.61803398875 / 1.61803398875 / 1.61803398875 / 1.61803398875 / 1.61803398875);
+  padding-bottom: -webkit-calc(100% / 1.61803398875 / 1.61803398875 / 1.61803398875 / 1.61803398875 / 1.61803398875 / 1.61803398875 / 1.61803398875);
+}
+.golden-rectangle, .golden-rectangle-vertical{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  clear: both;
+}
